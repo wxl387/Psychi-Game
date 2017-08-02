@@ -1,16 +1,79 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-  <meta charset="UTF-8">
-  <title>Psychic Game</title>
-
+	<meta charset="UTF-8">
+	<title>Psychic Game</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Julee" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-  <div id="game">
-    <h1>Press any letter you like from A - Z</h1>
-  </div>
+    <div class = "row">
+    	<div class = "col-md-12 text-center">
+    		<div class="container">
+    		<h1>Press any letter you like from A - Z</h1>
+    		</div>
+		</div>
+	</div>
+	
+	<div class= "row">
+		<div class = "col-md-4">
+		</div>
 
-  <!--link js file-->
-  <script type="text/javascript" src="assets/javascript/game.js"></script>
+		<div class = "col-md-4">
+    		<div id="game">
+	    		<ul class="list-group">
+	            	<li class="list-group-item"><p id="wins">Wins: </p></li>
+	            	<li class="list-group-item"><p id="losses">Losses: </p></li>
+	            	<li class="list-group-item"><p id="guesses">Guesses Left: </p></li>
+	            	<li class="list-group-item"><p id="guessedLetter">Guessed Letter: </p></li>
+	          	</ul>
+        	</div>
+        </div>
+    </div>
+	
+  	<div class="col-md-12">
+      	<div class="footer push">
+        	<footer class="footer text-center">
+          		<div class="container">
+            		<p><a href="https://wxl387.github.io/">About Wenbiao Li</a></p>
+            		<p>@2017 Wenbiao Li</p>
+        		</div>
+        	</footer>
+      	</div>
+    </div>
+	
+	<audio id="welcome" controls style="display:none">
+  		<source src="assets/Sound/Welcome Rift.mp3" type="audio/mpeg">
+  	</audio>
+  	<audio id="1b" controls style="display:none">
+  		<source src="assets/Sound/First Blood.mp3" type="audio/mpeg">
+  	</audio>
+  	<audio id="2b" controls style="display:none">
+  		<source src="assets/Sound/Double Kill.mp3" type="audio/mpeg">
+  	</audio>
+  	<audio id="3b" controls style="display:none">
+  		<source src="assets/Sound/Triple Kill.mp3" type="audio/mpeg">
+  	</audio>
+  	<audio id="4b" controls style="display:none">
+  		<source src="assets/Sound/Monster Kill.mp3" type="audio/mpeg">
+  	</audio>
+  	<audio id="5b" controls style="display:none">
+  		<source src="assets/Sound/Rampage.mp3" type="audio/mpeg">
+  	</audio>
+  	<audio id="moreb" controls style="display:none">
+  		<source src="assets/Sound/Enemy Godlike.mp3" type="audio/mpeg">
+  	</audio>
+  	<audio id="victory" controls style="display:none">
+  		<source src="assets/Sound/Victory.mp3" type="audio/mpeg">
+  	</audio>
+  	<audio id="defeat" controls style="display:none">
+  		<source src="assets/Sound/Defeat.mp3" type="audio/mpeg">
+  	</audio>
+  			
+  	<!--link js file-->
+  	<script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
 </html>

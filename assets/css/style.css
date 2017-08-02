@@ -1,0 +1,14 @@
+h1, p {font-family: 'Julee', cursive;}
+
+h1 {
+	color:	#DC143C;
+}
+
+body {
+	background-image:url("../images/background.jpg");
+}
+
+footer {
+	position:fixed;
+	bottom:0px;
+}
